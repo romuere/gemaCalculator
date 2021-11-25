@@ -1,5 +1,9 @@
 # GEMA CALCULATOR
 
+<figure>
+<img src="gemaCalculator/logo.png" width="300" height="300" />
+</figure>
+
 ### Criação
 
 O software “GEMA CALCULATOR” foi idealizado a partir da disciplina MODELOS MISTOS APLICADO AO MELHORAMENTO ANIMAL, ministrada pelo Professor Doutor José Lindenberg Rocha Sarmento na UNIVERSIDADE FEDERAL DO PIAUÍ (UFPI).
@@ -41,10 +45,15 @@ As regras de Henderson e Quaas consistem em varias condições a serem verificad
 
 
 ### Desenvolvedores
+
 [Lilian Rosalina Gomes Silva](lattes.cnpq.br/5441457629307443)
+
 [Romuere Rodrigues Veloso e Silva](lattes.cnpq.br/3734588405818556)
+
 [José Lindenberg Rocha Sarmento](lattes.cnpq.br/1991742176699922)
+
 Sandra Isabel Castañeda Caguana 
+
 [Maurício dos Santos Araújo](lattes.cnpq.br/4799904442791081)
 
 

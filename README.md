@@ -17,10 +17,12 @@ As regras de Henderson e Quaas consistem em varias condições a serem verificad
 
 - Etapa 1. Para utilizar o software é necessário inserir um banco dados.
 
+<p align="center">
 <figure>
 <img src="gemaCalculator/1.png"/>
 <figure-caption>Etapa 1. Inserção do banco de dados.</figure-caption>
 </figure>
+</p>
 
 - Etapa 2. Com o banco de dados inserido o usuário poderá visualizá-lo na interface do software.
 

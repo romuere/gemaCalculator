@@ -16,6 +16,10 @@ As regras de Henderson e Quaas consistem em varias condições a serem verificad
 ### Instruções de uso
 
 - Etapa 1. Para utilizar o software é necessário inserir um banco dados.
+<figure>
+<img src="gemaCalculator/1.png"/>
+<figure-caption>Etapa 1. Inserção do banco de dados.</figure-caption>
+</figure>
 - Etapa 2. Com o banco de dados inserido o usuário poderá visualizá-lo na interface do software.
 - Etapa 3. O usuário deve escolher o local onde irá salvar o arquivo de saída. Obs.: O usuário poderá renomear o arquivo de saída.
 - Etapa 4. Feito isso, o usuário deverá clicar no botão “Calcular”. O passo a passo dos cálculos das regras de Henderson e Quaas, para calcular a matriz de parentesco e sua inversa, serão salvos no arquivo de saída.

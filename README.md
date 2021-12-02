@@ -48,13 +48,13 @@ As regras de Henderson e Quaas consistem em varias condições a serem verificad
 
 [Lilian Rosalina Gomes Silva](http://lattes.cnpq.br/5441457629307443)
 
-[Romuere Rodrigues Veloso e Silva](lattes.cnpq.br/3734588405818556)
+[Romuere Rodrigues Veloso e Silva](http://lattes.cnpq.br/3734588405818556)
 
-[José Lindenberg Rocha Sarmento](lattes.cnpq.br/1991742176699922)
+[José Lindenberg Rocha Sarmento](http://lattes.cnpq.br/1991742176699922)
 
 Sandra Isabel Castañeda Caguana 
 
-[Maurício dos Santos Araújo](lattes.cnpq.br/4799904442791081)
+[Maurício dos Santos Araújo](http://lattes.cnpq.br/4799904442791081)
 
 
 MIT License

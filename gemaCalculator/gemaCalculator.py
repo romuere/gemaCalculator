@@ -11,6 +11,8 @@ from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import QFileDialog, QMessageBox, QLabel, QComboBox
 
 import os
+import webbrowser
+
 from henderson import Henderson
 
 class Ui_MainWindow(object):
@@ -42,12 +44,17 @@ class Ui_MainWindow(object):
         self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_3.setGeometry(QtCore.QRect(130, 344, 113, 32))
         self.pushButton_3.setObjectName("pushButton_3")
+
+        self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_4.setGeometry(QtCore.QRect(335, 344, 25, 25))
+        self.pushButton_4.setObjectName("pushButton_3")
+
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(160, 0, 81, 71))
         self.label.setObjectName("label")
         self.pixmap = QPixmap('logo_final.png')
         self.label.setPixmap(self.pixmap)
-        
+
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -55,21 +62,24 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
-        
-        
+
+
         self.fileBanco = []
         self.pastaSalvar = []
         self.pushButton.clicked.connect(self.openDatabase)
         self.pushButton_2.clicked.connect(self.openDirectory)
         self.pushButton_3.clicked.connect(self.calcular)
-        
+
+        self.pushButton_4.clicked.connect(self.help)
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Calculadora A e A- (Quaas & Henderson)"))
         self.pushButton.setText(_translate("MainWindow", "Carregar Dados"))
         self.pushButton_2.setText(_translate("MainWindow", "Salvar em..."))
         self.pushButton_3.setText(_translate("MainWindow", "Calcular"))
-    
+        self.pushButton_4.setText(_translate("MainWindow", "?"))
+
     def openDatabase(self):
         file = QFileDialog.getOpenFileName(None,'Abrir Banco de Dados', self.lineEdit.text())
         print(file[0])
@@ -77,18 +87,21 @@ class Ui_MainWindow(object):
         with open(file[0]) as f:
             self.plainTextEdit.appendPlainText(f.read())
         self.fileBanco = file[0]
-        
+
     def openDirectory(self):
         cwd = os.getcwd()
         file = QFileDialog.getExistingDirectory(None,'Selecione o local para salvar o resultado', cwd)
         self.lineEdit_2.setText(str(file+'/saida.txt'))
-    
+
     def calcular(self):
         self.pastaSalvar = self.lineEdit_2.text()
         calc = Henderson(self.fileBanco,self.pastaSalvar)
         calc.calculo()
         QMessageBox.information(None, 'Tudo pronto!', 'As matrizes foram calculadas!')
-    
+
+    def help(self):
+        webbrowser.open_new_tab('https://github.com/romuere/gemaCalculator')
+
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
@@ -97,4 +110,3 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-

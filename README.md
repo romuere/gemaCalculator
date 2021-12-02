@@ -46,7 +46,7 @@ As regras de Henderson e Quaas consistem em varias condições a serem verificad
 
 ### Desenvolvedores
 
-[Lilian Rosalina Gomes Silva](lattes.cnpq.br/5441457629307443)
+[Lilian Rosalina Gomes Silva](http://lattes.cnpq.br/5441457629307443)
 
 [Romuere Rodrigues Veloso e Silva](lattes.cnpq.br/3734588405818556)
 

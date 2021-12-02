@@ -17,6 +17,30 @@ O software foi criado em linguagem de programação Python, e desta forma pode s
 Esta primeira versão do software permite obter a matriz dos numeradores dos coeficientes de parentesco e sua inversa utilizando as regras do Henderson e Quaas;
 As regras de Henderson e Quaas consistem em varias condições a serem verificadas e atendidas para que se possa calcular e montar a matriz de parentesco. Devida a numerosa quantidades de etapas necessárias para montar a matriz, o cálculo manual pode torna-se exaustivo conforme o tamanho do banco de dados, daí a ideia de automatizar o processo. 
 
+### Executar o GEMA CALCULATOR
+
+O GEMA CALCULATOR foi desenvolvido na linguagem de programação Python, dessa forma é possível executá-lo em qual sistema operacional que possua a linguagem Python.
+
+#### Instalar o Python
+
+1) Caso ainda não possua o Python será necessário realizar a instalação, recomendamos a instalação do [Anaconda](https://www.anaconda.com/products/individual) pois essa distribuição já possui todas os pacotes necessários.
+
+2) Caso já possua o [Python](https://www.python.org/downloads/) instalado em sua máquina, basta instalar os seguintes pacotes direto no terminal:
+
+`$ pip install PyQt5`
+
+`$ pip install numpy`
+
+3) Após isso, faça o download do código fonte na sua máquina utilizando [esse link](https://codeload.github.com/romuere/gemaCalculator/zip/refs/heads/master) ou em `Code` -> `Download Zip`.
+
+4) O passo seguinte é descompatar o arquivo Zip.
+
+5) Abra o terminal na pasta criada após a descompactação e entre na pasta `gemaCalculator` (nesta pasta existe um arquivo chamado `gemaCalculator.py`).
+
+6) Execute o arquivo `gemaCalculator.py`:
+
+`$ python gemaCalculator.py`
+
 ### Instruções de uso
 
 - Etapa 1. Para utilizar o software é necessário inserir um banco dados.
